@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+       
+    </style>
+    
+</head>
+
+<body background="todo.jpg">
+  <div class="bg-dark text-light mb-4">
+      <h1 class="py-4 text-center display-5"><b>TODO APP</b></TODO></h1>
+  </div>
+   <div class="container">
+      <div class="card card-body card-form ">
+         <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+               
+               <input class="form-control" type="text" name="task" id="task" placeholder="Add task" required>
+            </div>
+            
+            <div  class="form-action-buttons">
+                <input type="submit" value="Add to list" class="btn btn-primary mt-2">
+                <input type="reset" value="Reset" class="btn btn-primary mt-2 ml-2">
+            </div>
+        </form> 
+      </div>
+       
+        <div class="card card-body card-form mt-4">
+            <table class="list table" id="list">
+                <thead class="thead-dark bg-primary ">
+                    <tr>
+                        <th scope="col">    Tasks added</th>
+                       
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    
+   </div>
+    
+   
+    <script src="todo1.js"></script>
+</body>
+
+</html>
